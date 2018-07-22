@@ -2,6 +2,10 @@ const electron = require('electron'),
       app = electron.app,
       BrowserWindow = electron.BrowserWindow;
 
+require('dotenv').config({
+    path: `${app.getAppPath()}/.env.${process.env.NODE_ENV}`
+});
+
 require('electron-reload')(__dirname, {
     electron: require(`${__dirname}/node_modules/electron`)
 });
