@@ -23,9 +23,13 @@
     }
   },
   "dependencies": {
+    "bookshelf": "^0.13.3",
+    "dotenv": "^6.0.0",
     "electron": "^2.0.2",
     "electron-builder": "^20.15.1",
     "electron-reload": "^1.2.2",
+    "knex": "^0.13.0",
+    "mysql": "^2.16.0",
     "xml2js": "^0.4.19"
   }
 }

@@ -3,8 +3,10 @@ const electron = require('electron'),
       BrowserWindow = electron.BrowserWindow;
 
 require('dotenv').config({
-    path: `${app.getAppPath()}/.env.${process.env.NODE_ENV}`
+    path: `./.env.${process.env.NODE_ENV}`
 });
+
+console.log(process.env.DB_USER);
 
 require('electron-reload')(__dirname, {
     electron: require(`${__dirname}/node_modules/electron`)
