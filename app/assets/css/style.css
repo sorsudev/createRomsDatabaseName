@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+.paddingTop15 {
+    padding-top: 15px;
+}
+
+.blue-background {
+    background: #00BFFF !important;
+}
